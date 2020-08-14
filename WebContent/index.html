@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Maisie's Market</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1> Welcome to Maisie's Market! </h1>
+<h2>Please choose an item below and place your order.</h2>
+	<table>
+
+		<tr>
+			<th>Name</th>
+			<th>Price</th>
+			<th></th>
+		</tr>
+
+		<tr>
+			<td>Apple</td>
+			<td>0.50</td>
+			<td><input type="button" value="add to cart"
+				onclick="addToCart('Apple', 0.50)" /></td>
+		</tr>
+
+		<tr>
+			<td>Orange</td>
+			<td>1.50</td>
+			<td><input type="button" value="add to cart"
+				onclick="addToCart('Orange', 1.50)" /></td>
+		</tr>
+
+		<tr>
+			<td>Sandwich</td>
+			<td>4.50</td>
+			<td><input type="button" value="add to cart"
+				onclick="addToCart('Sandwich', 4.50)" /></td>
+		</tr>
+
+		<tr>
+			<td>Cookie</td>
+			<td>0.75</td>
+			<td><input type="button" value="add to cart"
+				onclick="addToCart('Cookie', 0.75)" /></td>
+		</tr>
+
+		<tr>
+			<td>Drink</td>
+			<td>2.50</td>
+			<td><input type="button" value="add to cart"
+				onclick="addToCart('Drink', 2.50)" /></td>
+		</tr>
+
+	</table>
+	
+	<input type="button" value="checkout" onclick="printCart()" /> <input type="button" value="receipt" onclick="printReceipt()" />
+	
+	<p id="finalCart"></p>
+	<h3>Order Receipt</h3>
+	<p id="order"></p>
+ 
+
+	<script src="javaScript.js"></script>
+
+</body>
+</html>
+
+
